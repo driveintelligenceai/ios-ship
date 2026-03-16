@@ -13,16 +13,12 @@ CLI tool for building, archiving, and uploading iOS apps to TestFlight.
 ## Commands
 ```bash
 # Full pipeline
-op run --env-file=.env.tpl -- npx tsx src/cli.ts ship <project-dir> --bundle-id com.example.app --submit
 
 # Just build + archive
-op run --env-file=.env.tpl -- npx tsx src/cli.ts build <project-dir>
 
 # Just upload
-op run --env-file=.env.tpl -- npx tsx src/cli.ts upload <archive.xcarchive>
 
 # Check status
-op run --env-file=.env.tpl -- npx tsx src/cli.ts status com.example.app
 ```
 
 ## Required env vars (from .env.tpl via 1Password)
